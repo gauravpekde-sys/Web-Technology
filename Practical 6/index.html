@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasta kart.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Suvidha</h1>
+        <p>Your Online Shopping Cart</p>
+    </div>
+
+    <div class="container">
+        <div class="cart-section">
+            <h2>Cart Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTableBody"></tbody>
+            </table>
+
+            <div class="add-form">
+                <h3>Add Product</h3>
+                <div class="form-row">
+                    <input type="text" id="pName" placeholder="Product Name">
+                    <input type="number" id="pPrice" placeholder="Price (₹)">
+                    <input type="number" id="pQty" placeholder="Qty" value="1">
+                    <button onclick="handleAdd()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="summary">
+                <p><strong>Product Names:</strong> <span id="namesList"></span></p>
+                <h3>Total: ₹<span id="totalPrice">0</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer">Created by Gaurav</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
