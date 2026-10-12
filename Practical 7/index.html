@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Practical 7- Asynchronous Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Live Weather Search</h2>
+
+        <label for="citySelect">Choose a City:</label>
+        <select id="citySelect">
+            <option value="21.1458,79.0882">Nagpur</option>
+            <option value="18.5204,73.8567">Pune</option>
+            <option value="19.0760,72.8777">Mumbai</option>
+            <option value="28.6139,77.2090">New Delhi</option>
+        </select>
+
+        <button onclick="getWeather()">Get Live Weather</button>
+
+        <div id="weatherResult" class="result">
+            <p>Select a location and click search.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
